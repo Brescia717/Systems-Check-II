@@ -1,0 +1,19 @@
+<table>
+  <thread>
+    <tr>
+      <td>Team Name</td>
+      <td>Wins</td>
+      <td>Losses</td>
+    </tr>
+  </thread>
+  <tbody>
+  <% teams.each do |team| %>
+
+    <tr>
+      <td><%= team[:name] %></td>
+      <td><%= team[:wins] %></td>
+      <td><%= team[:losses] %></td>
+    </tr>
+    <% end %>
+  </tbody>
+</table>
